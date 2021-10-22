@@ -1,0 +1,14 @@
+<div class="row">
+  {% for student in students %}
+  <div class="col-3 p-3">
+    <div class="card mb-3" style="">
+      <img src="https://picsum.photos/200/200" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">{{student.firstName}} {{student.lastName}}</h5>
+        <p class="card-text">Email : {{student.email}}</p>
+        <p class="card-text">Age : {{student.age}}</p>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>

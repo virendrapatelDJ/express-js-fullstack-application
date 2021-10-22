@@ -1,0 +1,9 @@
+{% extends "./layout/layout.html" %} {% block maincontent %}
+
+<h1>All Students</h1>
+
+{% if view==='card'%}
+<div class="container">{% include "./components/student-card-view.html" %}</div>
+{% endif %} {% if view==='table'%}
+<div class="container">{% include "./components/student-table.html" %}</div>
+{% endif %} {% endblock %}
